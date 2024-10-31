@@ -1,0 +1,287 @@
+/*
+    Document   : default
+    Created on : Mar 27, 2014, 1:12:36 PM
+    Author     : Robert
+    Description: Default stylesheet for RDP LinkedIn Groups plug-in.
+*/
+.clear{clear: both;}
+
+a.rdp-lig-item{
+    border-radius: 0px;
+    box-sizing: content-box;
+    font: 13px/normal "Open Sans", sans-serif;
+    height: auto;
+    letter-spacing: normal;
+    margin: 0px;
+    padding: 0px;
+    position: static;
+    text-shadow: none;
+    text-transform: none;
+    transition: none 0 cubic-bezier(0.25, 0.1, 0.25, 1) 0;
+    width: auto;    
+    cursor: pointer;
+}
+
+a.rdp-lig-item>img { 
+    background: #EEEEEE;
+    border: 1px solid #888888;
+    display: inline;
+    float: none;
+    height: 26px;
+    line-height: 24px;
+    margin: -4px 6px 0px 0px;
+    padding: 0px;
+    vertical-align: middle;
+    width: 26px;
+}
+
+#rdp-lig-head a.rdp-lig-item>img{
+    margin-bottom: 3px;
+}
+
+.rdp-lig-avatar-64 { 
+height: 64px;
+left: -72px;
+position: absolute;
+top: 4px;
+width: 64px;
+}  
+#rdp-lig-sub-wrapper{
+    background-image: -webkit-linear-gradient(#f8f8f8,#eeeeee);
+    background-image: -moz-linear-gradient(#f8f8f8,#eeeeee);
+    background-image: -o-linear-gradient(#f8f8f8,#eeeeee);
+    background-image: linear-gradient(#f8f8f8,#eeeeee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#eeeeee',GradientType=0 );
+    border-top: 1px solid #eee;
+    min-width: 100px;
+    box-sizing: content-box;
+    position: absolute;
+    left: 100px;
+    top: 150px;  
+    z-index: 9999
+}
+    
+#rdp-lig-sub-wrapper.hidden{display: none;} 
+#rdp-lig-sub-wrapper.visible{display: inline-table;}
+
+.rdp-lig-wrap{
+    padding: 6px 0px 12px;
+}
+#rdp-lig-sub-wrapper p{
+    color: #333;
+    margin: 0 16px 0 88px;
+    position: relative;
+    padding: 0 10px;
+    font: normal normal 400 13px/26px Arial;
+    height: 26px;
+    min-width: 140px;
+    white-space: nowrap;        
+}
+#rdp-lig-sub-wrapper p a{color: #069;font: normal normal 400 13px/26px Arial;}
+#rdp-lig-sub-wrapper p a:hover{text-decoration: underline;}
+#rdp-lig-sub-wrapper p:first-of-type{
+    line-height: 32px;
+    height: auto;
+    margin-top: 6px;        
+}
+
+
+#rdp-lig-main strong { 
+font-weight: 700;
+}
+#rdp-lig-main a,
+.rdp-lig-paging-controls a,
+#rdp-lig-head a{cursor: pointer;text-decoration: none;}
+
+#rdp-lig-main a:hover,
+.rdp-lig-paging-controls a:hover,
+#rdp-lig-head a:hover{cursor: pointer;text-decoration: underline;}
+
+#rdp-lig-head{margin-bottom: 0;}
+#rdp-lig-head .wrap{text-align: right;}
+#rdp-lig-head .wrap .btnLGILogin{display: inline;}
+#rdp-lig-head a:hover{text-decoration: underline;}
+.rdp-lig-head-false .wrap{text-align: right;}
+
+#rdp-lig-top-bar .rdp-lig-group.disabled{cursor: default;}
+#btnLIGDashboard.loading span{visibility: hidden;}
+#btnLIGDashboard.loading,
+#rdp-lig-main.loading{
+	display: block;
+        cursor: default;
+        height: 30px;
+	content: "\0020";
+	filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+	opacity: 0.7;
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url('../images/anim_loading_16x16.gif');
+	border-top: #fff;
+}
+
+#rdp-lig-usermeta-wrap{
+    display: inline;
+    float: right;
+}
+#rdp-lig-usermeta-wrap table{margin: 0;border: none;}
+#rdp-lig-usermeta-wrap table td{padding: 0;vertical-align: top;border: none;line-height: normal;}
+#rdp-lig-usermeta-wrap #tdImg{padding-right: 6px;width: 65px;}
+#rdp-lig-usermeta-wrap table td .rdp-lig-header-sign-in-link{margin-top: 10px;}
+
+
+#rdp-lig-main div.groups{margin: 0 auto;width: 474px;}
+
+#rdp-lig-main.abbreviated h3,
+#rdp-lig-main.abbreviated h4.article-title{ 
+    border: 0px none currentColor;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: 17px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+}
+#rdp-lig-main.abbreviated h4.article-title{clear: none;}
+#rdp-lig-main.abbreviated a.poster{
+    margin: 0 2px 0 0;
+    float: none;
+    width: auto;    
+}
+#rdp-lig-main.abbreviated .discussion-item .entity { 
+float: left;
+margin-right: 15px;
+width: 40px;
+}
+#rdp-lig-main.abbreviated .discussion-item .discussion-content .referenced-item { 
+padding: 5px 10px 0px 0px;
+}
+#rdp-lig-main.abbreviated .discussion-item .discussion-content .referenced-item img { 
+float: left;
+margin: 5px 10px 10px 0px;
+}
+#rdp-lig-main.abbreviated .discussion-item img.groups { 
+    float: left;
+    margin-right: 20px;
+}
+#rdp-lig-main.abbreviated img.photo { 
+    border: 1px solid #E6E6E6;
+    display: block;
+    padding: 2px;
+}
+#rdp-lig-main.abbreviated .discussion-item .discussion-content { 
+    float: left;
+    margin-left: 10px;
+}
+#rdp-lig-main.abbreviated .discussion-item .discussion-content .user-contributed .discussion-title { 
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
+#rdp-lig-main.abbreviated [class*="content"]:after{ 
+    content: "";
+    display: block;
+    margin: 0;
+    padding: 0 0 10px;
+}
+#rdp-lig-main.abbreviated span.content-source:after{
+    margin: 0;
+    padding: 0;
+}
+#rdp-lig-main.abbreviated .item-actions { 
+    margin: 5px 0px;
+    padding: 0;
+}
+#rdp-lig-main.abbreviated div.discussion-item { 
+    border-top: 1px solid #EEEEEE;
+    clear: both;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+#rdp-lig-main .rdp-lig-group-container{
+    border-top: 1px solid #EEEEEE;
+    clear: both;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+#rdp-lig-main .rdp-lig-group-container:after { 
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+}
+#rdp-lig-main .rdp-lig-group-photo-wrap { 
+    float: left;
+    width: auto;
+    height: 50px;
+}
+#rdp-lig-main .rdp-lig-group-photo { 
+    cursor: pointer;
+}
+#rdp-lig-main .rdp-lig-group-photo-name { 
+    float: left;
+    margin-left: 10px;
+    clear: none;
+}
+#rdp-lig-main .rdp-lig-group-photo-name p{font-weight: bold;}
+#rdp-lig-top-bar.top-bar .view-group-rss {
+    display: block;
+    height: 25px;
+    width: 25px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    border: transparent 1px;
+}
+
+#rdp-lig-top-bar.top-bar .view-group-rss span {
+    background:url("../images/rss-icon.png") no-repeat;
+    display: block;
+    border: transparent 1px;
+    margin: 0 6px ;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    text-indent: -9999px;
+    position: absolute;
+}
+
+#idpc-tooltip{display: none;}
+
+#rdp-lig-paging-message{text-align: center;font-weight: bold;}
+.rdp-lig-paging-select{width: auto;}
+.rdp-lig-paging-select-wrap{margin-left: 8px;}
+.rdp-lig-paging-container a,.rdp-lig-paging-container a:hover {cursor:pointer;font-size: 13px;}
+.rdp-lig-paging-container a.disabled,a.disabled:hover { color:gray; text-decoration: none;cursor:no-drop}
+.rdp-lig-paging-container-minimal a.disabled,
+.rdp-lig-paging-container-minimal a.disabled+span{display: none;} 
+
+.fancybox-skin {
+    border-radius: 0px 0px 4px 4px;
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+}
+.fancybox-close {
+    top: -36px;
+}
+.fancybox-title-outside-wrap{
+    background: #0A0A0A;
+    padding: 3px 6px;
+}
+.fancybox-title{
+    z-index: 8039;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-topleft: 4px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;  
+}
